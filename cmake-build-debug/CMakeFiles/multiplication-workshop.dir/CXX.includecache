@@ -1,0 +1,34 @@
+#IncludeRegexLine: ^[ 	]*[#%][ 	]*(include|import)[ 	]*[<"]([^">]+)([">])
+
+#IncludeRegexScan: ^.*$
+
+#IncludeRegexComplain: ^$
+
+#IncludeRegexTransform: 
+
+C:/Users/vultu/CLionProjects/multiplication-workshop/main.cpp
+src/Multiplicator.h
+C:/Users/vultu/CLionProjects/multiplication-workshop/src/Multiplicator.h
+
+C:/Users/vultu/CLionProjects/multiplication-workshop/src/Multiplicator.h
+Number.h
+C:/Users/vultu/CLionProjects/multiplication-workshop/src/Number.h
+functional
+-
+chrono
+-
+fstream
+-
+
+C:/Users/vultu/CLionProjects/multiplication-workshop/src/Number.h
+vector
+-
+cstdlib
+-
+ctime
+-
+iostream
+-
+Number.h
+C:/Users/vultu/CLionProjects/multiplication-workshop/src/Number.h
+
