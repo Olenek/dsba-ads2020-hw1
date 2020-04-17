@@ -1,4 +1,4 @@
 # multiplication-workshop
 #### DSBA-191 Student, Anton Ivanov's solution of the "Big Workshop" 
 
-Some information to be added
+The results of the experiment are yet to be uploaded to the repository
