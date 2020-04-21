@@ -1,4 +1,4 @@
-7//
+//
 // Created by vultu on 4/20/2020.
 //
 
@@ -17,8 +17,8 @@ void Experimentator::conduct_experiment(size_t k, size_t n, size_t step) {
     std::unordered_map<std::string, std::vector<double>> vec_running_times;
 
     std::vector<double> v;
-    for (const auto &p: order_of_computations) {
-        vec_running_times.emplace(p.second, v);
+    for (const std::string &key: tested_algorithms) {
+        vec_running_times.emplace(key, v);
     }
 
     Number r1;
@@ -29,27 +29,27 @@ void Experimentator::conduct_experiment(size_t k, size_t n, size_t step) {
         r2.generate_random(i + 1, 2);
 
         calculators.insert(std::make_pair("school", std::move(a)));
- 0       calculators.insert(std::make_pair("karatsuba", std::move(b)));
+        calculators.insert(std::make_pair("karatsuba", std::move(b)));
         calculators.insert(std::make_pair("caesar", std::move(c)));
 
         for (size_t j = 0; j < n; ++j) {
-            for (const auto &p: order_of_computations) {
-                if (temp_running_times.find(p.second) != temp_running_times.end())
-                    temp_running_times[p.second] += (measure_time([&](const Number&, const Number&){
-                        return calculators.at(p.second)->multiply(r1, r2); }, r1, r2)) /
+            for (const std::string &key: tested_algorithms) {
+                if (temp_running_times.find(key) != temp_running_times.end())
+                    temp_running_times[key] += (measure_time([&](const Number&, const Number&){
+                        return calculators.at(key)->multiply(r1, r2); }, r1, r2)) /
                                                        n; //divide by n to get mean value in the end
                 else
-                    temp_running_times[p.second] = (measure_time([&](const Number&, const Number&){
-                        return calculators.at(p.second)->multiply(r1, r2); }, r1, r2)) /
+                    temp_running_times[key] = (measure_time([&](const Number&, const Number&){
+                        return calculators.at(key)->multiply(r1, r2); }, r1, r2)) /
                                                       n; //divide by n to get mean value in the end
             }
         }
 
         std::cout << i << '\n'; // print to see that something is working
 
-        for (const auto &p: order_of_computations) {
-            vec_running_times.at(p.second).push_back(
-                    temp_running_times.at(p.second)); // adding times to the respective vectors
+        for (const std::string &key: tested_algorithms) {
+            vec_running_times.at(key).push_back(
+                    temp_running_times.at(key)); // adding times to the respective vectors
         }
     }
 
@@ -61,15 +61,15 @@ void Experimentator::vec_to_csv(size_t step, std::unordered_map<std::string, std
     std::ofstream file;
     file.open(output_filename);
     file << ',';
-    for (auto p: order_of_computations) {
-        file << p.second << " (ms)" << ',';
+    for (const std::string &key: tested_algorithms) {
+        file << key << " (ms)" << ',';
     }
     file << '\n';
 
-    for (size_t i = 0; i < vec_running_times.at(order_of_computations.begin()->second).size(); i++) {
+    for (size_t i = 0; i < vec_running_times.at(*(tested_algorithms.begin())).size(); i++) {
         file << i * step + 1 << ',';
-        for (auto p: order_of_computations) {
-            file << vec_running_times.at(p.second)[i] << ',';
+        for (const std::string &key: tested_algorithms) {
+            file << vec_running_times.at(key)[i] << ',';
         }
         file << '\n';
 

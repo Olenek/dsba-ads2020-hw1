@@ -8,22 +8,24 @@
 #include <chrono>
 #include <unordered_map>
 #include <functional>
+#include <set>
+#include <utility>
 #include "MultiplicatorV.h"
 
 class Experimentator {
 private:
     std::string output_filename;
-    std::unordered_map<size_t, std::string> order_of_computations;
+    std::set<std::string> tested_algorithms;
 public:
     Experimentator(){
-        order_of_computations = {
-                {0, "karatsuba"},
-                {1, "caesar"},
-                {2, "school"}};
+        tested_algorithms = {
+                "karatsuba",
+                "caesar",
+                "school"};
         output_filename = "";
     }
 
-    void setOutput(std::string s){output_filename = s;};
+    void setOutput(std::string s){output_filename = std::move(s);};
 
     void vec_to_csv(size_t, std::unordered_map<std::string, std::vector<double>>);
 
