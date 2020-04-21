@@ -54,4 +54,5 @@ set(CMAKE_MAKEFILE_PRODUCTS
 # Dependency information for all targets:
 set(CMAKE_DEPEND_INFO_FILES
   "CMakeFiles/multiplication-workshop.dir/DependInfo.cmake"
+  "CMakeFiles/multiplication-workshop_OLD.dir/DependInfo.cmake"
   )

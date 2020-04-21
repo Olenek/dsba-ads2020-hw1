@@ -2,14 +2,15 @@
 // Created by vultu on 4/17/2020.
 //
 
-#ifndef MULTIPLICATION_WORKSHOP_NUMBER_H
-#define MULTIPLICATION_WORKSHOP_NUMBER_H
+#ifndef EXTRAMULT_NUMBER_H
+#define EXTRAMULT_NUMBER_H
 
-#include "Number.h"
 #include <cstdlib>
 #include <ctime>
 #include <iostream>
 #include <vector>
+
+typedef std::vector<short> DigitVec;
 
 class Number
 {
@@ -40,5 +41,10 @@ public:
 
     Number shift(size_t) const;
 };
+
+
+Number one_digit_multiplication(const Number&, const Number&);
+
+Number strip_zeroes(const Number&);
 
 #endif // MULTIPLICATION_WORKSHOP_NUMBER_H

@@ -1,3 +1,4 @@
 C:/Users/vultu/CLionProjects/multiplication-workshop/cmake-build-debug/CMakeFiles/multiplication-workshop.dir
+C:/Users/vultu/CLionProjects/multiplication-workshop/cmake-build-debug/CMakeFiles/multiplication-workshop_OLD.dir
 C:/Users/vultu/CLionProjects/multiplication-workshop/cmake-build-debug/CMakeFiles/edit_cache.dir
 C:/Users/vultu/CLionProjects/multiplication-workshop/cmake-build-debug/CMakeFiles/rebuild_cache.dir

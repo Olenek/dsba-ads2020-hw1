@@ -1,9 +1,5 @@
-//
-// Created by vultu on 4/17/2020.
-//
-
-#ifndef CONTEST_SOLUTIONS_MULTIPLICATOR_H
-#define CONTEST_SOLUTIONS_MULTIPLICATOR_H
+#ifndef EXTRAMULT_MULTIPLICATOR_H
+#define EXTRAMULT_MULTIPLICATOR_H
 
 #include "Number.h"
 #include <chrono>
@@ -33,4 +29,4 @@ public:
     void conduct_experiment(size_t, size_t, int, const std::string&);
 };
 
-#endif  // MULTIPLICATION_WORKSHOP_MULTIPLICATOR_H
+#endif  EXTRAMULT_MULTIPLICATOR_H

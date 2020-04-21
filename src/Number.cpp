@@ -8,6 +8,7 @@ Number::Number() = default;
 
 Number::Number(std::vector<short> v) : digits(std::move(v)){};
 
+
 Number &Number::operator+=(const Number &other)
 {
     if (size() < other.size())

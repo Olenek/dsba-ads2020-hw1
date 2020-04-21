@@ -5,8 +5,9 @@ set(CMAKE_DEPENDS_LANGUAGES
 # The set of files for implicit dependencies of each language:
 set(CMAKE_DEPENDS_CHECK_CXX
   "C:/Users/vultu/CLionProjects/multiplication-workshop/main.cpp" "C:/Users/vultu/CLionProjects/multiplication-workshop/cmake-build-debug/CMakeFiles/multiplication-workshop.dir/main.cpp.obj"
-  "C:/Users/vultu/CLionProjects/multiplication-workshop/src/Multiplicator.cpp" "C:/Users/vultu/CLionProjects/multiplication-workshop/cmake-build-debug/CMakeFiles/multiplication-workshop.dir/src/Multiplicator.cpp.obj"
-  "C:/Users/vultu/CLionProjects/multiplication-workshop/src/Number.cpp" "C:/Users/vultu/CLionProjects/multiplication-workshop/cmake-build-debug/CMakeFiles/multiplication-workshop.dir/src/Number.cpp.obj"
+  "C:/Users/vultu/CLionProjects/multiplication-workshop/src2/Experimentator.cpp" "C:/Users/vultu/CLionProjects/multiplication-workshop/cmake-build-debug/CMakeFiles/multiplication-workshop.dir/src2/Experimentator.cpp.obj"
+  "C:/Users/vultu/CLionProjects/multiplication-workshop/src2/MultiplicatorV.cpp" "C:/Users/vultu/CLionProjects/multiplication-workshop/cmake-build-debug/CMakeFiles/multiplication-workshop.dir/src2/MultiplicatorV.cpp.obj"
+  "C:/Users/vultu/CLionProjects/multiplication-workshop/src2/Number.cpp" "C:/Users/vultu/CLionProjects/multiplication-workshop/cmake-build-debug/CMakeFiles/multiplication-workshop.dir/src2/Number.cpp.obj"
   )
 set(CMAKE_CXX_COMPILER_ID "GNU")
 
