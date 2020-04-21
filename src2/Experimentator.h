@@ -27,7 +27,7 @@ public:
 
     void setOutput(std::string s){output_filename = std::move(s);};
 
-    void vec_to_csv(size_t, std::unordered_map<std::string, std::vector<double>>);
+    void vec_to_csv(size_t, const std::unordered_map<std::string, std::vector<double>>&);
 
     void conduct_experiment(size_t, size_t, size_t);
 };

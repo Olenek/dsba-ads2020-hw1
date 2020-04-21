@@ -57,7 +57,7 @@ void Experimentator::conduct_experiment(size_t k, size_t n, size_t step) {
     std::cout << "Done";
 }
 
-void Experimentator::vec_to_csv(size_t step, std::unordered_map<std::string, std::vector<double>> vec_running_times) {
+void Experimentator::vec_to_csv(size_t step, const std::unordered_map<std::string, std::vector<double>>& vec_running_times) {
     std::ofstream file;
     file.open(output_filename);
     file << ',';
