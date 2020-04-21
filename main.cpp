@@ -8,8 +8,8 @@ int main()
 //    m.conduct_experiment(100,10,10,R"(C:\Users\vultu\CLionProjects\multiplication-workshop\results\experiment_1.csv)");
 //
     Experimentator h = Experimentator();
-    h.setOutput(R"(C:\Users\vultu\CLionProjects\multiplication-workshop\results\experiment_1.csv)");
-    h.conduct_experiment(30000, 1, 29999);
+    h.setOutput(R"(C:\Users\vultu\CLionProjects\multiplication-workshop\results\experiment_2.csv)");
+    h.conduct_experiment(1000, 5, 10);
 
     //    Number r1;
     //    Number r2;

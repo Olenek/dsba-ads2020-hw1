@@ -87,12 +87,9 @@ Number Number::operator-(const Number &other) const
     return ans;
 }
 
-Number Number::shift(size_t t) const
+void Number::shift(size_t t)
 {
-    Number res;
-    res.digits.resize(t + digits.size(), 0);
-    std::copy(digits.begin(), digits.end(), res.digits.begin() + t);
-    return res;
+    digits.insert(digits.begin(), t, 0);
 }
 
 size_t Number::size() const
@@ -165,19 +162,3 @@ Number strip_zeroes(const Number& n1){ //returns copy without leading zeroes
 
     return res;
 }
-
-Number one_digit_multiplication(const Number& n1, const Number& n2){
-    DigitVec res_vec(2, 0); // at most 2 digits
-    Number tmp_1 = strip_zeroes(n1);
-    Number tmp_2 = strip_zeroes(n2);
-    if(tmp_1.size()!=1 || tmp_2.size() != 1){
-        throw std::invalid_argument("received not one digit number");
-    }
-
-    res_vec[0] += (tmp_1.digit(0) * tmp_1.digit(0))/10;
-    res_vec[1] += (tmp_1.digit(0) * tmp_1.digit(0))%10;
-
-    Number result = Number(res_vec);
-    return result;
-}
-

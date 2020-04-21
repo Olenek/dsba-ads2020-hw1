@@ -48,7 +48,10 @@ Number CaesarMultiplicator::multiply(const Number &n1, const Number &n2) const {
     Number a1b2 = this->multiply(a.first, b.second);
     Number a2b1 = this->multiply(a.second, b.first);
 
-    return a1b1.shift(2 * m) + (a2b1 + a1b2).shift(m) + a2b2;
+    a2b1.shift(m);
+    a1b2.shift(m);
+    a1b1.shift(2*m);
+    return a1b1 + a2b1 + a1b2 + a2b2;
 }
 
 Number KaratsubaMultiplicator::multiply(const Number &n1, const Number &n2) const {
@@ -73,6 +76,11 @@ Number KaratsubaMultiplicator::multiply(const Number &n1, const Number &n2) cons
     Number a1b1 = this->multiply(a.first, b.first);
     Number a2b2 = this->multiply(a.second, b.second);
     Number a1_a2b1_b2 = this->multiply(a1_a2, b1_b2);
-    return a1b1.shift(2 * m) + (a1_a2b1_b2 - (a2b2 + a1b1)).shift(m) + a2b2;
+
+    Number intermediate = a1_a2b1_b2 - (a2b2 + a1b1);
+    a1b1.shift(2*m);
+    intermediate.shift(m);
+    a2b2.shift(m);
+    return a1b1 + intermediate + a2b2;
 }
 

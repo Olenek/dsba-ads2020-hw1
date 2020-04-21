@@ -40,10 +40,9 @@ public:
 
     void print() const;
 
-    Number shift(size_t) const;
+    void shift(size_t);
 };
 
-Number one_digit_multiplication(const Number&, const Number&);
 
 Number strip_zeroes(const Number&);
 
