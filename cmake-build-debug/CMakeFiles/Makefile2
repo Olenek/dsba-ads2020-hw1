@@ -101,43 +101,6 @@ clean: CMakeFiles/multiplication-workshop.dir/clean
 .PHONY : clean
 
 #=============================================================================
-# Target rules for target CMakeFiles/multiplication-workshop_OLD.dir
-
-# All Build rule for target.
-CMakeFiles/multiplication-workshop_OLD.dir/all:
-	$(MAKE) -f CMakeFiles\multiplication-workshop_OLD.dir\build.make CMakeFiles/multiplication-workshop_OLD.dir/depend
-	$(MAKE) -f CMakeFiles\multiplication-workshop_OLD.dir\build.make CMakeFiles/multiplication-workshop_OLD.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=C:\Users\vultu\CLionProjects\multiplication-workshop\cmake-build-debug\CMakeFiles --progress-num=6,7,8,9 "Built target multiplication-workshop_OLD"
-.PHONY : CMakeFiles/multiplication-workshop_OLD.dir/all
-
-# Include target in all.
-all: CMakeFiles/multiplication-workshop_OLD.dir/all
-
-.PHONY : all
-
-# Build rule for subdir invocation for target.
-CMakeFiles/multiplication-workshop_OLD.dir/rule: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start C:\Users\vultu\CLionProjects\multiplication-workshop\cmake-build-debug\CMakeFiles 4
-	$(MAKE) -f CMakeFiles\Makefile2 CMakeFiles/multiplication-workshop_OLD.dir/all
-	$(CMAKE_COMMAND) -E cmake_progress_start C:\Users\vultu\CLionProjects\multiplication-workshop\cmake-build-debug\CMakeFiles 0
-.PHONY : CMakeFiles/multiplication-workshop_OLD.dir/rule
-
-# Convenience name for target.
-multiplication-workshop_OLD: CMakeFiles/multiplication-workshop_OLD.dir/rule
-
-.PHONY : multiplication-workshop_OLD
-
-# clean rule for target.
-CMakeFiles/multiplication-workshop_OLD.dir/clean:
-	$(MAKE) -f CMakeFiles\multiplication-workshop_OLD.dir\build.make CMakeFiles/multiplication-workshop_OLD.dir/clean
-.PHONY : CMakeFiles/multiplication-workshop_OLD.dir/clean
-
-# clean rule for target.
-clean: CMakeFiles/multiplication-workshop_OLD.dir/clean
-
-.PHONY : clean
-
-#=============================================================================
 # Special targets to cleanup operation of make.
 
 # Special rule to run CMake to check the build system integrity.
