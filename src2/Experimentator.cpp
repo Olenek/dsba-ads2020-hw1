@@ -82,11 +82,9 @@ double measure_time(const std::function<Number (const Number&, const Number&)>& 
 
 size_t Experimentator::compute_step(size_t k){
     size_t cur_step = 1;
-    if(k > 400)
-        cur_step = 5;
 
-    while(k > 10){
-        k/=100;
+    while(k >= 10){
+        k/=10;
         cur_step*=10;
     }
     return cur_step;

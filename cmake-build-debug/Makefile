@@ -122,6 +122,19 @@ multiplication-workshop/fast:
 	$(MAKE) -f CMakeFiles\multiplication-workshop.dir\build.make CMakeFiles/multiplication-workshop.dir/build
 .PHONY : multiplication-workshop/fast
 
+#=============================================================================
+# Target rules for targets named multiplication-workshop_2
+
+# Build rule for target.
+multiplication-workshop_2: cmake_check_build_system
+	$(MAKE) -f CMakeFiles\Makefile2 multiplication-workshop_2
+.PHONY : multiplication-workshop_2
+
+# fast build rule for target.
+multiplication-workshop_2/fast:
+	$(MAKE) -f CMakeFiles\multiplication-workshop_2.dir\build.make CMakeFiles/multiplication-workshop_2.dir/build
+.PHONY : multiplication-workshop_2/fast
+
 main.obj: main.cpp.obj
 
 .PHONY : main.obj
@@ -129,6 +142,7 @@ main.obj: main.cpp.obj
 # target to build an object file
 main.cpp.obj:
 	$(MAKE) -f CMakeFiles\multiplication-workshop.dir\build.make CMakeFiles/multiplication-workshop.dir/main.cpp.obj
+	$(MAKE) -f CMakeFiles\multiplication-workshop_2.dir\build.make CMakeFiles/multiplication-workshop_2.dir/main.cpp.obj
 .PHONY : main.cpp.obj
 
 main.i: main.cpp.i
@@ -138,6 +152,7 @@ main.i: main.cpp.i
 # target to preprocess a source file
 main.cpp.i:
 	$(MAKE) -f CMakeFiles\multiplication-workshop.dir\build.make CMakeFiles/multiplication-workshop.dir/main.cpp.i
+	$(MAKE) -f CMakeFiles\multiplication-workshop_2.dir\build.make CMakeFiles/multiplication-workshop_2.dir/main.cpp.i
 .PHONY : main.cpp.i
 
 main.s: main.cpp.s
@@ -147,6 +162,7 @@ main.s: main.cpp.s
 # target to generate assembly for a file
 main.cpp.s:
 	$(MAKE) -f CMakeFiles\multiplication-workshop.dir\build.make CMakeFiles/multiplication-workshop.dir/main.cpp.s
+	$(MAKE) -f CMakeFiles\multiplication-workshop_2.dir\build.make CMakeFiles/multiplication-workshop_2.dir/main.cpp.s
 .PHONY : main.cpp.s
 
 src2/Experimentator.obj: src2/Experimentator.cpp.obj
@@ -156,6 +172,7 @@ src2/Experimentator.obj: src2/Experimentator.cpp.obj
 # target to build an object file
 src2/Experimentator.cpp.obj:
 	$(MAKE) -f CMakeFiles\multiplication-workshop.dir\build.make CMakeFiles/multiplication-workshop.dir/src2/Experimentator.cpp.obj
+	$(MAKE) -f CMakeFiles\multiplication-workshop_2.dir\build.make CMakeFiles/multiplication-workshop_2.dir/src2/Experimentator.cpp.obj
 .PHONY : src2/Experimentator.cpp.obj
 
 src2/Experimentator.i: src2/Experimentator.cpp.i
@@ -165,6 +182,7 @@ src2/Experimentator.i: src2/Experimentator.cpp.i
 # target to preprocess a source file
 src2/Experimentator.cpp.i:
 	$(MAKE) -f CMakeFiles\multiplication-workshop.dir\build.make CMakeFiles/multiplication-workshop.dir/src2/Experimentator.cpp.i
+	$(MAKE) -f CMakeFiles\multiplication-workshop_2.dir\build.make CMakeFiles/multiplication-workshop_2.dir/src2/Experimentator.cpp.i
 .PHONY : src2/Experimentator.cpp.i
 
 src2/Experimentator.s: src2/Experimentator.cpp.s
@@ -174,6 +192,7 @@ src2/Experimentator.s: src2/Experimentator.cpp.s
 # target to generate assembly for a file
 src2/Experimentator.cpp.s:
 	$(MAKE) -f CMakeFiles\multiplication-workshop.dir\build.make CMakeFiles/multiplication-workshop.dir/src2/Experimentator.cpp.s
+	$(MAKE) -f CMakeFiles\multiplication-workshop_2.dir\build.make CMakeFiles/multiplication-workshop_2.dir/src2/Experimentator.cpp.s
 .PHONY : src2/Experimentator.cpp.s
 
 src2/MultiplicatorV.obj: src2/MultiplicatorV.cpp.obj
@@ -183,6 +202,7 @@ src2/MultiplicatorV.obj: src2/MultiplicatorV.cpp.obj
 # target to build an object file
 src2/MultiplicatorV.cpp.obj:
 	$(MAKE) -f CMakeFiles\multiplication-workshop.dir\build.make CMakeFiles/multiplication-workshop.dir/src2/MultiplicatorV.cpp.obj
+	$(MAKE) -f CMakeFiles\multiplication-workshop_2.dir\build.make CMakeFiles/multiplication-workshop_2.dir/src2/MultiplicatorV.cpp.obj
 .PHONY : src2/MultiplicatorV.cpp.obj
 
 src2/MultiplicatorV.i: src2/MultiplicatorV.cpp.i
@@ -192,6 +212,7 @@ src2/MultiplicatorV.i: src2/MultiplicatorV.cpp.i
 # target to preprocess a source file
 src2/MultiplicatorV.cpp.i:
 	$(MAKE) -f CMakeFiles\multiplication-workshop.dir\build.make CMakeFiles/multiplication-workshop.dir/src2/MultiplicatorV.cpp.i
+	$(MAKE) -f CMakeFiles\multiplication-workshop_2.dir\build.make CMakeFiles/multiplication-workshop_2.dir/src2/MultiplicatorV.cpp.i
 .PHONY : src2/MultiplicatorV.cpp.i
 
 src2/MultiplicatorV.s: src2/MultiplicatorV.cpp.s
@@ -201,6 +222,7 @@ src2/MultiplicatorV.s: src2/MultiplicatorV.cpp.s
 # target to generate assembly for a file
 src2/MultiplicatorV.cpp.s:
 	$(MAKE) -f CMakeFiles\multiplication-workshop.dir\build.make CMakeFiles/multiplication-workshop.dir/src2/MultiplicatorV.cpp.s
+	$(MAKE) -f CMakeFiles\multiplication-workshop_2.dir\build.make CMakeFiles/multiplication-workshop_2.dir/src2/MultiplicatorV.cpp.s
 .PHONY : src2/MultiplicatorV.cpp.s
 
 src2/Number.obj: src2/Number.cpp.obj
@@ -210,6 +232,7 @@ src2/Number.obj: src2/Number.cpp.obj
 # target to build an object file
 src2/Number.cpp.obj:
 	$(MAKE) -f CMakeFiles\multiplication-workshop.dir\build.make CMakeFiles/multiplication-workshop.dir/src2/Number.cpp.obj
+	$(MAKE) -f CMakeFiles\multiplication-workshop_2.dir\build.make CMakeFiles/multiplication-workshop_2.dir/src2/Number.cpp.obj
 .PHONY : src2/Number.cpp.obj
 
 src2/Number.i: src2/Number.cpp.i
@@ -219,6 +242,7 @@ src2/Number.i: src2/Number.cpp.i
 # target to preprocess a source file
 src2/Number.cpp.i:
 	$(MAKE) -f CMakeFiles\multiplication-workshop.dir\build.make CMakeFiles/multiplication-workshop.dir/src2/Number.cpp.i
+	$(MAKE) -f CMakeFiles\multiplication-workshop_2.dir\build.make CMakeFiles/multiplication-workshop_2.dir/src2/Number.cpp.i
 .PHONY : src2/Number.cpp.i
 
 src2/Number.s: src2/Number.cpp.s
@@ -228,6 +252,7 @@ src2/Number.s: src2/Number.cpp.s
 # target to generate assembly for a file
 src2/Number.cpp.s:
 	$(MAKE) -f CMakeFiles\multiplication-workshop.dir\build.make CMakeFiles/multiplication-workshop.dir/src2/Number.cpp.s
+	$(MAKE) -f CMakeFiles\multiplication-workshop_2.dir\build.make CMakeFiles/multiplication-workshop_2.dir/src2/Number.cpp.s
 .PHONY : src2/Number.cpp.s
 
 # Help Target
@@ -237,6 +262,7 @@ help:
 	@echo ... clean
 	@echo ... depend
 	@echo ... multiplication-workshop
+	@echo ... multiplication-workshop_2
 	@echo ... edit_cache
 	@echo ... rebuild_cache
 	@echo ... main.obj

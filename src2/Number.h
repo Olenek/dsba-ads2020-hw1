@@ -15,13 +15,13 @@
 class Number
 {
 private:
-    std::vector<short> digits; // 123 = {3, 2, 1}
+    std::string digits; // 123 = {char(3), char(2), char(1)}
 public:
     Number();
 
-    Number(size_t);
+    Number(std::string&);
 
-    Number(std::vector<short>);
+    Number(std::string&&);
 
     Number &operator+=(const Number&);
 
@@ -35,7 +35,7 @@ public:
 
     size_t size() const;
 
-    short at(size_t) const;
+    char at(size_t) const;
 
     void generate_random(size_t, int);
 

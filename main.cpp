@@ -5,14 +5,18 @@
 int main()
 {
     Experimentator h = Experimentator();
-    h.setOutput(R"(C:\Users\vultu\CLionProjects\multiplication-workshop\results\experiment_6.csv)");
-    h.conduct_experiment(100000, 3);
+    h.setOutput(R"(C:\Users\vultu\CLionProjects\multiplication-workshop\results\intersection.csv)");
+    std::set<std::string>  algorithms_to_test = {
+            "karatsuba",
+            "school"};
+    h.setAlgorithms(algorithms_to_test);
+    h.conduct_experiment(75000, 3);
 
-
+//
 //    Number r1 = Number();
 //    Number r2 = Number();
-//    r1.generate_random(1000, 1);
-//    r2.generate_random(1000, 2);
+//    r1.generate_random(70000, 1);
+//    r2.generate_random(70000, 2);
 //    std::unique_ptr<MultiplicatorV> a = std::make_unique<SchoolMultiplicator>();
 //    std::unique_ptr<MultiplicatorV> b = std::make_unique<KaratsubaMultiplicator>();
 //    std::unique_ptr<MultiplicatorV> c = std::make_unique<CaesarMultiplicator>();
@@ -20,9 +24,9 @@ int main()
 //        return a->multiply(r1, r2); }, r1, r2)) << '\n';
 //    std::cout<<"Karatsuba "<< (measure_time([&](const Number&, const Number&){
 //        return b->multiply(r1, r2); }, r1, r2)) << '\n';
-//
+////
 //    auto res1 =  a->multiply(r1, r2);
-//    auto res2 =  b->multiply(r1, r2);
+//    auto res2 =  c->multiply(r1, r2);
 //    res1.print();
 //    res2.print();
 
