@@ -11,16 +11,17 @@
 #include <iostream>
 #include <vector>
 
-typedef std::vector<short> DigitVec;
 
 class Number
 {
 private:
-    DigitVec digits; // 123 = {3, 2, 1}
+    std::vector<short> digits; // 123 = {3, 2, 1}
 public:
     Number();
 
-    Number(DigitVec);
+    Number(size_t);
+
+    Number(std::vector<short>);
 
     Number &operator+=(const Number&);
 
@@ -34,16 +35,15 @@ public:
 
     size_t size() const;
 
-    short digit(size_t) const;
+    short at(size_t) const;
 
     void generate_random(size_t, int);
 
     void print() const;
 
     void shift(size_t);
+
 };
 
-
-Number strip_zeroes(const Number&);
 
 #endif // MULTIPLICATION_WORKSHOP_NUMBER_H

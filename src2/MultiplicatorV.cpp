@@ -12,13 +12,14 @@ Number SchoolMultiplicator::multiply(const Number &n1, const Number &n2) const {
     for (size_t i = 0; i < n1.size(); ++i) {
         int carry = 0;
         for (size_t j = 0; j < n2.size(); ++j) {
-            result[i + j] += (n2.digit(j) * n1.digit(i) + carry);
+            result[i + j] += (n2.at(j) * n1.at(i) + carry);
             carry = result[i + j] / 10;
             result[i + j] %= 10;
         }
         result[i + n2.size()] = carry;
     }
-    Number product = Number(result);
+    Number product = Number(std::move(result));
+
     return product;
 }
 
@@ -40,9 +41,6 @@ Number CaesarMultiplicator::multiply(const Number &n1, const Number &n2) const {
     // t = 10^m
     // AB = A1B1*t^2 + (A2B1 + A1B2)*t + A2B2 - 4 multiplications
 
-    Number a1_a2 = a.first + a.second;
-    Number b1_b2 = b.first + b.second;
-
     Number a1b1 = this->multiply(a.first, b.first);
     Number a2b2 = this->multiply(a.second, b.second);
     Number a1b2 = this->multiply(a.first, b.second);
@@ -51,6 +49,7 @@ Number CaesarMultiplicator::multiply(const Number &n1, const Number &n2) const {
     a2b1.shift(m);
     a1b2.shift(m);
     a1b1.shift(2*m);
+
     return a1b1 + a2b1 + a1b2 + a2b2;
 }
 
@@ -80,7 +79,7 @@ Number KaratsubaMultiplicator::multiply(const Number &n1, const Number &n2) cons
     Number intermediate = a1_a2b1_b2 - (a2b2 + a1b1);
     a1b1.shift(2*m);
     intermediate.shift(m);
-    a2b2.shift(m);
+
     return a1b1 + intermediate + a2b2;
 }
 

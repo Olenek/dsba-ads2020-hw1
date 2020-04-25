@@ -27,9 +27,13 @@ public:
 
     void setOutput(std::string s){output_filename = std::move(s);};
 
-    void vec_to_csv(size_t, const std::unordered_map<std::string, std::vector<double>>&);
+    void write_line(std::ofstream&, size_t, std::unordered_map<std::string, double>&);
 
-    void conduct_experiment(size_t, size_t, size_t);
+    std::ofstream make_csv();
+
+    size_t compute_step(size_t k);
+
+    void conduct_experiment(size_t, size_t);
 };
 
 double measure_time(const std::function<Number (const Number&, const Number&)>&, const Number &n1, const Number &n2);

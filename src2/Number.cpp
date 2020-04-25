@@ -6,10 +6,13 @@
 
 Number::Number() = default;
 
+Number::Number(size_t n) : digits(std::vector<short>(n)) {};
+
+
 Number::Number(std::vector<short> v) : digits(std::move(v)){};
 
 
-Number &Number::operator+=(const Number &other)
+Number& Number::operator+=(const Number &other)
 {
     if (size() < other.size())
     {
@@ -19,7 +22,7 @@ Number &Number::operator+=(const Number &other)
     short carry = 0;
     for (size_t i = 0; i < other.size(); ++i)
     {
-        short sum = digit(i) + other.digit(i) + carry;
+        short sum = digits[i] + other.digits[i] + carry;
         short new_digit = sum % 10;
         digits[i] = new_digit;
         carry = sum / 10;
@@ -30,7 +33,7 @@ Number &Number::operator+=(const Number &other)
     {
         if (digit_index < size())
         {
-            short sum = digit(digit_index) + carry;
+            short sum = digits[digit_index] + carry;
             short new_digit = sum % 10;
             digits[digit_index] = new_digit;
             carry = sum / 10;
@@ -53,7 +56,7 @@ Number Number::operator+(const Number &other) const
     return ans;
 }
 
-Number &Number::operator-=(const Number &other)
+Number& Number::operator-=(const Number &other)
 {
     Number initial_number = *this;
     if (size() < other.size())
@@ -97,7 +100,7 @@ size_t Number::size() const
     return digits.size();
 }
 
-short Number::digit(size_t index) const // return digits in reversed order
+short Number::at(size_t index) const // return digits in reversed order
 {
     return digits[index];
 }
@@ -112,12 +115,12 @@ std::pair<Number, Number> Number::split(size_t cut_size) const
     std::copy(digits.begin(), digits.begin() + cut_size, res1.digits.begin());
     std::copy(digits.begin() + cut_size, digits.end(), res2.digits.begin());
 
-    return std::make_pair(res2, res1);
+    return std::make_pair(std::move(res2), std::move(res1));
 }
 
 void Number::generate_random(size_t k, int time_seed)
 {
-    DigitVec randVec;
+    std::vector<short> randVec;
     std::srand(std::time(0) + time_seed);
     randVec.reserve(k);
     for (size_t i = 0; i < (k - 1); i++)
@@ -125,40 +128,29 @@ void Number::generate_random(size_t k, int time_seed)
         randVec.push_back(rand() % 10);
     }
     randVec.push_back((rand() % 9) + 1);
-    Number ans = Number(randVec);
+    Number ans = Number(std::move(randVec));
     *this = ans;
 }
 
 void Number::print() const
 {
     // print ignoring leading zeroes
-    Number tmp = strip_zeroes(*this);
-
-    for(auto it = tmp.digits.rbegin(); it!=tmp.digits.rend(); --it){
-        std::cout<<*it;
-    }
-    std::cout<<std::endl;
-}
-
-Number strip_zeroes(const Number& n1){ //returns copy without leading zeroes
-
-    DigitVec res_vec;
-    size_t i = 0;
-    while(n1.digit(i) == 0 && i!=n1.size()){
-        ++i;
+    auto it = digits.rbegin();
+    while (it != digits.rend() && *it == 0)
+    {
+        ++it;
     }
     bool any_digit = false;
-    while (i!=n1.size())
+    while (it != digits.rend())
     {
-        res_vec.push_back(n1.digit(i));
-        ++i;
+        std::cout << *it;
+        ++it;
         any_digit = true;
     }
     if (!any_digit)
     {
-        res_vec.push_back(0);
+        std::cout << "0";
     }
-    Number res = Number(res_vec);
-
-    return res;
+    std::cout << "\n";
 }
+
