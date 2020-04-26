@@ -7,40 +7,38 @@
 #IncludeRegexTransform: 
 
 C:/Users/vultu/CLionProjects/multiplication-workshop/main.cpp
-memory
--
-src2/Experimentator.h
-C:/Users/vultu/CLionProjects/multiplication-workshop/src2/Experimentator.h
+src/Experimentator.h
+C:/Users/vultu/CLionProjects/multiplication-workshop/src/Experimentator.h
 
-C:/Users/vultu/CLionProjects/multiplication-workshop/src2/Experimentator.cpp
-fstream
--
+C:/Users/vultu/CLionProjects/multiplication-workshop/src/Experimentator.cpp
+Experimentator.h
+C:/Users/vultu/CLionProjects/multiplication-workshop/src/Experimentator.h
 bits/unique_ptr.h
 -
-Experimentator.h
-C:/Users/vultu/CLionProjects/multiplication-workshop/src2/Experimentator.h
-
-C:/Users/vultu/CLionProjects/multiplication-workshop/src2/Experimentator.h
-chrono
+fstream
 -
-unordered_map
+
+C:/Users/vultu/CLionProjects/multiplication-workshop/src/Experimentator.h
+Multiplicator.h
+C:/Users/vultu/CLionProjects/multiplication-workshop/src/Multiplicator.h
+chrono
 -
 functional
 -
 set
 -
+unordered_map
+-
 utility
 -
-MultiplicatorV.h
-C:/Users/vultu/CLionProjects/multiplication-workshop/src2/MultiplicatorV.h
 
-C:/Users/vultu/CLionProjects/multiplication-workshop/src2/MultiplicatorV.h
+C:/Users/vultu/CLionProjects/multiplication-workshop/src/Multiplicator.h
+Number.h
+C:/Users/vultu/CLionProjects/multiplication-workshop/src/Number.h
 vector
 -
-Number.h
-C:/Users/vultu/CLionProjects/multiplication-workshop/src2/Number.h
 
-C:/Users/vultu/CLionProjects/multiplication-workshop/src2/Number.h
+C:/Users/vultu/CLionProjects/multiplication-workshop/src/Number.h
 cstdlib
 -
 ctime

@@ -6,20 +6,21 @@
 
 Number::Number() = default;
 
-Number::Number(std::vector<short> v) : digits(std::move(v)){};
+Number::Number(std::string &s) : digits(std::move(s)){};
 
+Number::Number(std::string &&s) : digits(std::move(s)){};
 
 Number &Number::operator+=(const Number &other)
 {
     if (size() < other.size())
     {
-        digits.resize(other.size(), 0);
+        digits.reserve(other.size());
     }
 
     short carry = 0;
     for (size_t i = 0; i < other.size(); ++i)
     {
-        short sum = digit(i) + other.digit(i) + carry;
+        short sum = digits[i] + other.digits[i] + carry;
         short new_digit = sum % 10;
         digits[i] = new_digit;
         carry = sum / 10;
@@ -30,7 +31,7 @@ Number &Number::operator+=(const Number &other)
     {
         if (digit_index < size())
         {
-            short sum = digit(digit_index) + carry;
+            short sum = digits[digit_index] + carry;
             short new_digit = sum % 10;
             digits[digit_index] = new_digit;
             carry = sum / 10;
@@ -66,7 +67,7 @@ Number &Number::operator-=(const Number &other)
 
     for (size_t i = 0; i != size(); ++i)
     {
-        short diff = digits[i] - (i < other.size() ? other.digits[i] : 0) - borrow;
+        short diff = short(digits[i]) - short(i < other.size() ? other.digits[i] : 0) - borrow;
         if (diff < 0)
         {
             borrow = 1;
@@ -75,7 +76,7 @@ Number &Number::operator-=(const Number &other)
         {
             borrow = 0;
         }
-        digits[i] = diff + 10 * borrow;
+        digits[i] = char(diff + 10 * borrow);
     }
     return *this;
 }
@@ -87,12 +88,9 @@ Number Number::operator-(const Number &other) const
     return ans;
 }
 
-Number Number::shift(size_t t) const
+void Number::shift(size_t t)
 {
-    Number res;
-    res.digits.resize(t + digits.size(), 0);
-    std::copy(digits.begin(), digits.end(), res.digits.begin() + t);
-    return res;
+    digits.insert(digits.begin(), t, char(0));
 }
 
 size_t Number::size() const
@@ -100,7 +98,7 @@ size_t Number::size() const
     return digits.size();
 }
 
-short Number::digit(size_t index) const // return digits in reversed order
+char Number::at(size_t index) const // return digits in reversed order
 {
     return digits[index];
 }
@@ -110,26 +108,25 @@ std::pair<Number, Number> Number::split(size_t cut_size) const
     Number res1;
     Number res2;
 
-    res1.digits.resize(cut_size, 0);
-    res2.digits.resize(size() - cut_size, 0);
-
+    res1.digits.resize(cut_size, char(0));
+    res2.digits.resize(size() - cut_size, char(0));
     std::copy(digits.begin(), digits.begin() + cut_size, res1.digits.begin());
     std::copy(digits.begin() + cut_size, digits.end(), res2.digits.begin());
 
-    return std::make_pair(res2, res1);
+    return std::make_pair(std::move(res2), std::move(res1));
 }
 
 void Number::generate_random(size_t k, int time_seed)
 {
-    std::vector<short> randVec;
+    std::string randStr;
     std::srand(std::time(0) + time_seed);
-    randVec.reserve(k);
+    randStr.reserve(k);
     for (size_t i = 0; i < (k - 1); i++)
     {
-        randVec.push_back(rand() % 10);
+        randStr.push_back(char(rand() % 10));
     }
-    randVec.push_back((rand() % 9) + 1);
-    Number ans = Number(randVec);
+    randStr.push_back(char((rand() % 9) + 1));
+    Number ans = Number(std::move(randStr)); // possible trash
     *this = ans;
 }
 
@@ -144,7 +141,7 @@ void Number::print() const
     bool any_digit = false;
     while (it != digits.rend())
     {
-        std::cout << *it;
+        std::cout << char(*it + char(48));
         ++it;
         any_digit = true;
     }

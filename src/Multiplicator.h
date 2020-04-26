@@ -1,32 +1,41 @@
-#ifndef EXTRAMULT_MULTIPLICATOR_H
-#define EXTRAMULT_MULTIPLICATOR_H
+//
+// Created by vultu on 4/20/2020.
+//
+
+#ifndef EXTRAMULT_MULTIPLICATORV_H
+#define EXTRAMULT_MULTIPLICATORV_H
 
 #include "Number.h"
-#include <chrono>
-#include <fstream>
-#include <functional>
+#include <vector>
 
 class Multiplicator
 {
-private:
-    std::vector<double> karatsuba_times;
-    std::vector<double> school_times;
-    std::vector<double> div_con_times;
-
 public:
-    Multiplicator();
+    Multiplicator() = default;
+    virtual Number multiply(const Number &, const Number &) const = 0;
 
-    static Number school_mult(const Number&, const Number&);
-
-    static Number div_con_mult(const Number &, const Number&);
-
-    static Number karatsuba_mult(const Number&, const Number&);
-
-    void vec_to_csv(const std::string&, int);
-
-    static double measure_time(std::function<Number(Number, Number)>, const Number&, const Number&);
-
-    void conduct_experiment(size_t, size_t, int, const std::string&);
+    virtual ~Multiplicator() = default;
 };
 
-#endif  EXTRAMULT_MULTIPLICATOR_H
+class KaratsubaMultiplicator : public Multiplicator
+{
+public:
+    KaratsubaMultiplicator() = default;
+    virtual Number multiply(const Number &, const Number &) const override;
+};
+
+class SchoolMultiplicator : public Multiplicator
+{
+public:
+    SchoolMultiplicator() = default;
+    virtual Number multiply(const Number &, const Number &) const override;
+};
+
+class CaesarMultiplicator : public Multiplicator
+{
+public:
+    CaesarMultiplicator() = default;
+    virtual Number multiply(const Number &, const Number &) const override;
+};
+
+#endif // CONTEST_SOLUTIONS_MULTIPLICATORV_H

@@ -1,8 +1,8 @@
 file(REMOVE_RECURSE
   "CMakeFiles/multiplication-workshop.dir/main.cpp.obj"
-  "CMakeFiles/multiplication-workshop.dir/src2/MultiplicatorV.cpp.obj"
-  "CMakeFiles/multiplication-workshop.dir/src2/Number.cpp.obj"
-  "CMakeFiles/multiplication-workshop.dir/src2/Experimentator.cpp.obj"
+  "CMakeFiles/multiplication-workshop.dir/src/Multiplicator.cpp.obj"
+  "CMakeFiles/multiplication-workshop.dir/src/Number.cpp.obj"
+  "CMakeFiles/multiplication-workshop.dir/src/Experimentator.cpp.obj"
   "multiplication-workshop.pdb"
   "multiplication-workshop.exe"
   "multiplication-workshop.exe.manifest"

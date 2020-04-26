@@ -165,95 +165,95 @@ main.cpp.s:
 	$(MAKE) -f CMakeFiles\multiplication-workshop_2.dir\build.make CMakeFiles/multiplication-workshop_2.dir/main.cpp.s
 .PHONY : main.cpp.s
 
-src2/Experimentator.obj: src2/Experimentator.cpp.obj
+src/Experimentator.obj: src/Experimentator.cpp.obj
 
-.PHONY : src2/Experimentator.obj
-
-# target to build an object file
-src2/Experimentator.cpp.obj:
-	$(MAKE) -f CMakeFiles\multiplication-workshop.dir\build.make CMakeFiles/multiplication-workshop.dir/src2/Experimentator.cpp.obj
-	$(MAKE) -f CMakeFiles\multiplication-workshop_2.dir\build.make CMakeFiles/multiplication-workshop_2.dir/src2/Experimentator.cpp.obj
-.PHONY : src2/Experimentator.cpp.obj
-
-src2/Experimentator.i: src2/Experimentator.cpp.i
-
-.PHONY : src2/Experimentator.i
-
-# target to preprocess a source file
-src2/Experimentator.cpp.i:
-	$(MAKE) -f CMakeFiles\multiplication-workshop.dir\build.make CMakeFiles/multiplication-workshop.dir/src2/Experimentator.cpp.i
-	$(MAKE) -f CMakeFiles\multiplication-workshop_2.dir\build.make CMakeFiles/multiplication-workshop_2.dir/src2/Experimentator.cpp.i
-.PHONY : src2/Experimentator.cpp.i
-
-src2/Experimentator.s: src2/Experimentator.cpp.s
-
-.PHONY : src2/Experimentator.s
-
-# target to generate assembly for a file
-src2/Experimentator.cpp.s:
-	$(MAKE) -f CMakeFiles\multiplication-workshop.dir\build.make CMakeFiles/multiplication-workshop.dir/src2/Experimentator.cpp.s
-	$(MAKE) -f CMakeFiles\multiplication-workshop_2.dir\build.make CMakeFiles/multiplication-workshop_2.dir/src2/Experimentator.cpp.s
-.PHONY : src2/Experimentator.cpp.s
-
-src2/MultiplicatorV.obj: src2/MultiplicatorV.cpp.obj
-
-.PHONY : src2/MultiplicatorV.obj
+.PHONY : src/Experimentator.obj
 
 # target to build an object file
-src2/MultiplicatorV.cpp.obj:
-	$(MAKE) -f CMakeFiles\multiplication-workshop.dir\build.make CMakeFiles/multiplication-workshop.dir/src2/MultiplicatorV.cpp.obj
-	$(MAKE) -f CMakeFiles\multiplication-workshop_2.dir\build.make CMakeFiles/multiplication-workshop_2.dir/src2/MultiplicatorV.cpp.obj
-.PHONY : src2/MultiplicatorV.cpp.obj
+src/Experimentator.cpp.obj:
+	$(MAKE) -f CMakeFiles\multiplication-workshop.dir\build.make CMakeFiles/multiplication-workshop.dir/src/Experimentator.cpp.obj
+	$(MAKE) -f CMakeFiles\multiplication-workshop_2.dir\build.make CMakeFiles/multiplication-workshop_2.dir/src/Experimentator.cpp.obj
+.PHONY : src/Experimentator.cpp.obj
 
-src2/MultiplicatorV.i: src2/MultiplicatorV.cpp.i
+src/Experimentator.i: src/Experimentator.cpp.i
 
-.PHONY : src2/MultiplicatorV.i
+.PHONY : src/Experimentator.i
 
 # target to preprocess a source file
-src2/MultiplicatorV.cpp.i:
-	$(MAKE) -f CMakeFiles\multiplication-workshop.dir\build.make CMakeFiles/multiplication-workshop.dir/src2/MultiplicatorV.cpp.i
-	$(MAKE) -f CMakeFiles\multiplication-workshop_2.dir\build.make CMakeFiles/multiplication-workshop_2.dir/src2/MultiplicatorV.cpp.i
-.PHONY : src2/MultiplicatorV.cpp.i
+src/Experimentator.cpp.i:
+	$(MAKE) -f CMakeFiles\multiplication-workshop.dir\build.make CMakeFiles/multiplication-workshop.dir/src/Experimentator.cpp.i
+	$(MAKE) -f CMakeFiles\multiplication-workshop_2.dir\build.make CMakeFiles/multiplication-workshop_2.dir/src/Experimentator.cpp.i
+.PHONY : src/Experimentator.cpp.i
 
-src2/MultiplicatorV.s: src2/MultiplicatorV.cpp.s
+src/Experimentator.s: src/Experimentator.cpp.s
 
-.PHONY : src2/MultiplicatorV.s
+.PHONY : src/Experimentator.s
 
 # target to generate assembly for a file
-src2/MultiplicatorV.cpp.s:
-	$(MAKE) -f CMakeFiles\multiplication-workshop.dir\build.make CMakeFiles/multiplication-workshop.dir/src2/MultiplicatorV.cpp.s
-	$(MAKE) -f CMakeFiles\multiplication-workshop_2.dir\build.make CMakeFiles/multiplication-workshop_2.dir/src2/MultiplicatorV.cpp.s
-.PHONY : src2/MultiplicatorV.cpp.s
+src/Experimentator.cpp.s:
+	$(MAKE) -f CMakeFiles\multiplication-workshop.dir\build.make CMakeFiles/multiplication-workshop.dir/src/Experimentator.cpp.s
+	$(MAKE) -f CMakeFiles\multiplication-workshop_2.dir\build.make CMakeFiles/multiplication-workshop_2.dir/src/Experimentator.cpp.s
+.PHONY : src/Experimentator.cpp.s
 
-src2/Number.obj: src2/Number.cpp.obj
+src/Multiplicator.obj: src/Multiplicator.cpp.obj
 
-.PHONY : src2/Number.obj
+.PHONY : src/Multiplicator.obj
 
 # target to build an object file
-src2/Number.cpp.obj:
-	$(MAKE) -f CMakeFiles\multiplication-workshop.dir\build.make CMakeFiles/multiplication-workshop.dir/src2/Number.cpp.obj
-	$(MAKE) -f CMakeFiles\multiplication-workshop_2.dir\build.make CMakeFiles/multiplication-workshop_2.dir/src2/Number.cpp.obj
-.PHONY : src2/Number.cpp.obj
+src/Multiplicator.cpp.obj:
+	$(MAKE) -f CMakeFiles\multiplication-workshop.dir\build.make CMakeFiles/multiplication-workshop.dir/src/Multiplicator.cpp.obj
+	$(MAKE) -f CMakeFiles\multiplication-workshop_2.dir\build.make CMakeFiles/multiplication-workshop_2.dir/src/Multiplicator.cpp.obj
+.PHONY : src/Multiplicator.cpp.obj
 
-src2/Number.i: src2/Number.cpp.i
+src/Multiplicator.i: src/Multiplicator.cpp.i
 
-.PHONY : src2/Number.i
+.PHONY : src/Multiplicator.i
 
 # target to preprocess a source file
-src2/Number.cpp.i:
-	$(MAKE) -f CMakeFiles\multiplication-workshop.dir\build.make CMakeFiles/multiplication-workshop.dir/src2/Number.cpp.i
-	$(MAKE) -f CMakeFiles\multiplication-workshop_2.dir\build.make CMakeFiles/multiplication-workshop_2.dir/src2/Number.cpp.i
-.PHONY : src2/Number.cpp.i
+src/Multiplicator.cpp.i:
+	$(MAKE) -f CMakeFiles\multiplication-workshop.dir\build.make CMakeFiles/multiplication-workshop.dir/src/Multiplicator.cpp.i
+	$(MAKE) -f CMakeFiles\multiplication-workshop_2.dir\build.make CMakeFiles/multiplication-workshop_2.dir/src/Multiplicator.cpp.i
+.PHONY : src/Multiplicator.cpp.i
 
-src2/Number.s: src2/Number.cpp.s
+src/Multiplicator.s: src/Multiplicator.cpp.s
 
-.PHONY : src2/Number.s
+.PHONY : src/Multiplicator.s
 
 # target to generate assembly for a file
-src2/Number.cpp.s:
-	$(MAKE) -f CMakeFiles\multiplication-workshop.dir\build.make CMakeFiles/multiplication-workshop.dir/src2/Number.cpp.s
-	$(MAKE) -f CMakeFiles\multiplication-workshop_2.dir\build.make CMakeFiles/multiplication-workshop_2.dir/src2/Number.cpp.s
-.PHONY : src2/Number.cpp.s
+src/Multiplicator.cpp.s:
+	$(MAKE) -f CMakeFiles\multiplication-workshop.dir\build.make CMakeFiles/multiplication-workshop.dir/src/Multiplicator.cpp.s
+	$(MAKE) -f CMakeFiles\multiplication-workshop_2.dir\build.make CMakeFiles/multiplication-workshop_2.dir/src/Multiplicator.cpp.s
+.PHONY : src/Multiplicator.cpp.s
+
+src/Number.obj: src/Number.cpp.obj
+
+.PHONY : src/Number.obj
+
+# target to build an object file
+src/Number.cpp.obj:
+	$(MAKE) -f CMakeFiles\multiplication-workshop.dir\build.make CMakeFiles/multiplication-workshop.dir/src/Number.cpp.obj
+	$(MAKE) -f CMakeFiles\multiplication-workshop_2.dir\build.make CMakeFiles/multiplication-workshop_2.dir/src/Number.cpp.obj
+.PHONY : src/Number.cpp.obj
+
+src/Number.i: src/Number.cpp.i
+
+.PHONY : src/Number.i
+
+# target to preprocess a source file
+src/Number.cpp.i:
+	$(MAKE) -f CMakeFiles\multiplication-workshop.dir\build.make CMakeFiles/multiplication-workshop.dir/src/Number.cpp.i
+	$(MAKE) -f CMakeFiles\multiplication-workshop_2.dir\build.make CMakeFiles/multiplication-workshop_2.dir/src/Number.cpp.i
+.PHONY : src/Number.cpp.i
+
+src/Number.s: src/Number.cpp.s
+
+.PHONY : src/Number.s
+
+# target to generate assembly for a file
+src/Number.cpp.s:
+	$(MAKE) -f CMakeFiles\multiplication-workshop.dir\build.make CMakeFiles/multiplication-workshop.dir/src/Number.cpp.s
+	$(MAKE) -f CMakeFiles\multiplication-workshop_2.dir\build.make CMakeFiles/multiplication-workshop_2.dir/src/Number.cpp.s
+.PHONY : src/Number.cpp.s
 
 # Help Target
 help:
@@ -268,15 +268,15 @@ help:
 	@echo ... main.obj
 	@echo ... main.i
 	@echo ... main.s
-	@echo ... src2/Experimentator.obj
-	@echo ... src2/Experimentator.i
-	@echo ... src2/Experimentator.s
-	@echo ... src2/MultiplicatorV.obj
-	@echo ... src2/MultiplicatorV.i
-	@echo ... src2/MultiplicatorV.s
-	@echo ... src2/Number.obj
-	@echo ... src2/Number.i
-	@echo ... src2/Number.s
+	@echo ... src/Experimentator.obj
+	@echo ... src/Experimentator.i
+	@echo ... src/Experimentator.s
+	@echo ... src/Multiplicator.obj
+	@echo ... src/Multiplicator.i
+	@echo ... src/Multiplicator.s
+	@echo ... src/Number.obj
+	@echo ... src/Number.i
+	@echo ... src/Number.s
 .PHONY : help
 
 

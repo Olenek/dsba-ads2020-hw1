@@ -69,59 +69,59 @@ CMakeFiles/multiplication-workshop.dir/main.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/multiplication-workshop.dir/main.cpp.s"
 	C:\PROGRA~2\MINGW-~1\I686-8~1.0-P\mingw32\bin\G__~1.EXE $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S C:\Users\vultu\CLionProjects\multiplication-workshop\main.cpp -o CMakeFiles\multiplication-workshop.dir\main.cpp.s
 
-CMakeFiles/multiplication-workshop.dir/src2/MultiplicatorV.cpp.obj: CMakeFiles/multiplication-workshop.dir/flags.make
-CMakeFiles/multiplication-workshop.dir/src2/MultiplicatorV.cpp.obj: ../src2/MultiplicatorV.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=C:\Users\vultu\CLionProjects\multiplication-workshop\cmake-build-debug\CMakeFiles --progress-num=$(CMAKE_PROGRESS_2) "Building CXX object CMakeFiles/multiplication-workshop.dir/src2/MultiplicatorV.cpp.obj"
-	C:\PROGRA~2\MINGW-~1\I686-8~1.0-P\mingw32\bin\G__~1.EXE  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles\multiplication-workshop.dir\src2\MultiplicatorV.cpp.obj -c C:\Users\vultu\CLionProjects\multiplication-workshop\src2\MultiplicatorV.cpp
+CMakeFiles/multiplication-workshop.dir/src/Multiplicator.cpp.obj: CMakeFiles/multiplication-workshop.dir/flags.make
+CMakeFiles/multiplication-workshop.dir/src/Multiplicator.cpp.obj: ../src/Multiplicator.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=C:\Users\vultu\CLionProjects\multiplication-workshop\cmake-build-debug\CMakeFiles --progress-num=$(CMAKE_PROGRESS_2) "Building CXX object CMakeFiles/multiplication-workshop.dir/src/Multiplicator.cpp.obj"
+	C:\PROGRA~2\MINGW-~1\I686-8~1.0-P\mingw32\bin\G__~1.EXE  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles\multiplication-workshop.dir\src\Multiplicator.cpp.obj -c C:\Users\vultu\CLionProjects\multiplication-workshop\src\Multiplicator.cpp
 
-CMakeFiles/multiplication-workshop.dir/src2/MultiplicatorV.cpp.i: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/multiplication-workshop.dir/src2/MultiplicatorV.cpp.i"
-	C:\PROGRA~2\MINGW-~1\I686-8~1.0-P\mingw32\bin\G__~1.EXE $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E C:\Users\vultu\CLionProjects\multiplication-workshop\src2\MultiplicatorV.cpp > CMakeFiles\multiplication-workshop.dir\src2\MultiplicatorV.cpp.i
+CMakeFiles/multiplication-workshop.dir/src/Multiplicator.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/multiplication-workshop.dir/src/Multiplicator.cpp.i"
+	C:\PROGRA~2\MINGW-~1\I686-8~1.0-P\mingw32\bin\G__~1.EXE $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E C:\Users\vultu\CLionProjects\multiplication-workshop\src\Multiplicator.cpp > CMakeFiles\multiplication-workshop.dir\src\Multiplicator.cpp.i
 
-CMakeFiles/multiplication-workshop.dir/src2/MultiplicatorV.cpp.s: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/multiplication-workshop.dir/src2/MultiplicatorV.cpp.s"
-	C:\PROGRA~2\MINGW-~1\I686-8~1.0-P\mingw32\bin\G__~1.EXE $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S C:\Users\vultu\CLionProjects\multiplication-workshop\src2\MultiplicatorV.cpp -o CMakeFiles\multiplication-workshop.dir\src2\MultiplicatorV.cpp.s
+CMakeFiles/multiplication-workshop.dir/src/Multiplicator.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/multiplication-workshop.dir/src/Multiplicator.cpp.s"
+	C:\PROGRA~2\MINGW-~1\I686-8~1.0-P\mingw32\bin\G__~1.EXE $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S C:\Users\vultu\CLionProjects\multiplication-workshop\src\Multiplicator.cpp -o CMakeFiles\multiplication-workshop.dir\src\Multiplicator.cpp.s
 
-CMakeFiles/multiplication-workshop.dir/src2/Number.cpp.obj: CMakeFiles/multiplication-workshop.dir/flags.make
-CMakeFiles/multiplication-workshop.dir/src2/Number.cpp.obj: ../src2/Number.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=C:\Users\vultu\CLionProjects\multiplication-workshop\cmake-build-debug\CMakeFiles --progress-num=$(CMAKE_PROGRESS_3) "Building CXX object CMakeFiles/multiplication-workshop.dir/src2/Number.cpp.obj"
-	C:\PROGRA~2\MINGW-~1\I686-8~1.0-P\mingw32\bin\G__~1.EXE  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles\multiplication-workshop.dir\src2\Number.cpp.obj -c C:\Users\vultu\CLionProjects\multiplication-workshop\src2\Number.cpp
+CMakeFiles/multiplication-workshop.dir/src/Number.cpp.obj: CMakeFiles/multiplication-workshop.dir/flags.make
+CMakeFiles/multiplication-workshop.dir/src/Number.cpp.obj: ../src/Number.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=C:\Users\vultu\CLionProjects\multiplication-workshop\cmake-build-debug\CMakeFiles --progress-num=$(CMAKE_PROGRESS_3) "Building CXX object CMakeFiles/multiplication-workshop.dir/src/Number.cpp.obj"
+	C:\PROGRA~2\MINGW-~1\I686-8~1.0-P\mingw32\bin\G__~1.EXE  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles\multiplication-workshop.dir\src\Number.cpp.obj -c C:\Users\vultu\CLionProjects\multiplication-workshop\src\Number.cpp
 
-CMakeFiles/multiplication-workshop.dir/src2/Number.cpp.i: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/multiplication-workshop.dir/src2/Number.cpp.i"
-	C:\PROGRA~2\MINGW-~1\I686-8~1.0-P\mingw32\bin\G__~1.EXE $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E C:\Users\vultu\CLionProjects\multiplication-workshop\src2\Number.cpp > CMakeFiles\multiplication-workshop.dir\src2\Number.cpp.i
+CMakeFiles/multiplication-workshop.dir/src/Number.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/multiplication-workshop.dir/src/Number.cpp.i"
+	C:\PROGRA~2\MINGW-~1\I686-8~1.0-P\mingw32\bin\G__~1.EXE $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E C:\Users\vultu\CLionProjects\multiplication-workshop\src\Number.cpp > CMakeFiles\multiplication-workshop.dir\src\Number.cpp.i
 
-CMakeFiles/multiplication-workshop.dir/src2/Number.cpp.s: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/multiplication-workshop.dir/src2/Number.cpp.s"
-	C:\PROGRA~2\MINGW-~1\I686-8~1.0-P\mingw32\bin\G__~1.EXE $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S C:\Users\vultu\CLionProjects\multiplication-workshop\src2\Number.cpp -o CMakeFiles\multiplication-workshop.dir\src2\Number.cpp.s
+CMakeFiles/multiplication-workshop.dir/src/Number.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/multiplication-workshop.dir/src/Number.cpp.s"
+	C:\PROGRA~2\MINGW-~1\I686-8~1.0-P\mingw32\bin\G__~1.EXE $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S C:\Users\vultu\CLionProjects\multiplication-workshop\src\Number.cpp -o CMakeFiles\multiplication-workshop.dir\src\Number.cpp.s
 
-CMakeFiles/multiplication-workshop.dir/src2/Experimentator.cpp.obj: CMakeFiles/multiplication-workshop.dir/flags.make
-CMakeFiles/multiplication-workshop.dir/src2/Experimentator.cpp.obj: ../src2/Experimentator.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=C:\Users\vultu\CLionProjects\multiplication-workshop\cmake-build-debug\CMakeFiles --progress-num=$(CMAKE_PROGRESS_4) "Building CXX object CMakeFiles/multiplication-workshop.dir/src2/Experimentator.cpp.obj"
-	C:\PROGRA~2\MINGW-~1\I686-8~1.0-P\mingw32\bin\G__~1.EXE  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles\multiplication-workshop.dir\src2\Experimentator.cpp.obj -c C:\Users\vultu\CLionProjects\multiplication-workshop\src2\Experimentator.cpp
+CMakeFiles/multiplication-workshop.dir/src/Experimentator.cpp.obj: CMakeFiles/multiplication-workshop.dir/flags.make
+CMakeFiles/multiplication-workshop.dir/src/Experimentator.cpp.obj: ../src/Experimentator.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=C:\Users\vultu\CLionProjects\multiplication-workshop\cmake-build-debug\CMakeFiles --progress-num=$(CMAKE_PROGRESS_4) "Building CXX object CMakeFiles/multiplication-workshop.dir/src/Experimentator.cpp.obj"
+	C:\PROGRA~2\MINGW-~1\I686-8~1.0-P\mingw32\bin\G__~1.EXE  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles\multiplication-workshop.dir\src\Experimentator.cpp.obj -c C:\Users\vultu\CLionProjects\multiplication-workshop\src\Experimentator.cpp
 
-CMakeFiles/multiplication-workshop.dir/src2/Experimentator.cpp.i: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/multiplication-workshop.dir/src2/Experimentator.cpp.i"
-	C:\PROGRA~2\MINGW-~1\I686-8~1.0-P\mingw32\bin\G__~1.EXE $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E C:\Users\vultu\CLionProjects\multiplication-workshop\src2\Experimentator.cpp > CMakeFiles\multiplication-workshop.dir\src2\Experimentator.cpp.i
+CMakeFiles/multiplication-workshop.dir/src/Experimentator.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/multiplication-workshop.dir/src/Experimentator.cpp.i"
+	C:\PROGRA~2\MINGW-~1\I686-8~1.0-P\mingw32\bin\G__~1.EXE $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E C:\Users\vultu\CLionProjects\multiplication-workshop\src\Experimentator.cpp > CMakeFiles\multiplication-workshop.dir\src\Experimentator.cpp.i
 
-CMakeFiles/multiplication-workshop.dir/src2/Experimentator.cpp.s: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/multiplication-workshop.dir/src2/Experimentator.cpp.s"
-	C:\PROGRA~2\MINGW-~1\I686-8~1.0-P\mingw32\bin\G__~1.EXE $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S C:\Users\vultu\CLionProjects\multiplication-workshop\src2\Experimentator.cpp -o CMakeFiles\multiplication-workshop.dir\src2\Experimentator.cpp.s
+CMakeFiles/multiplication-workshop.dir/src/Experimentator.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/multiplication-workshop.dir/src/Experimentator.cpp.s"
+	C:\PROGRA~2\MINGW-~1\I686-8~1.0-P\mingw32\bin\G__~1.EXE $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S C:\Users\vultu\CLionProjects\multiplication-workshop\src\Experimentator.cpp -o CMakeFiles\multiplication-workshop.dir\src\Experimentator.cpp.s
 
 # Object files for target multiplication-workshop
 multiplication__workshop_OBJECTS = \
 "CMakeFiles/multiplication-workshop.dir/main.cpp.obj" \
-"CMakeFiles/multiplication-workshop.dir/src2/MultiplicatorV.cpp.obj" \
-"CMakeFiles/multiplication-workshop.dir/src2/Number.cpp.obj" \
-"CMakeFiles/multiplication-workshop.dir/src2/Experimentator.cpp.obj"
+"CMakeFiles/multiplication-workshop.dir/src/Multiplicator.cpp.obj" \
+"CMakeFiles/multiplication-workshop.dir/src/Number.cpp.obj" \
+"CMakeFiles/multiplication-workshop.dir/src/Experimentator.cpp.obj"
 
 # External object files for target multiplication-workshop
 multiplication__workshop_EXTERNAL_OBJECTS =
 
 multiplication-workshop.exe: CMakeFiles/multiplication-workshop.dir/main.cpp.obj
-multiplication-workshop.exe: CMakeFiles/multiplication-workshop.dir/src2/MultiplicatorV.cpp.obj
-multiplication-workshop.exe: CMakeFiles/multiplication-workshop.dir/src2/Number.cpp.obj
-multiplication-workshop.exe: CMakeFiles/multiplication-workshop.dir/src2/Experimentator.cpp.obj
+multiplication-workshop.exe: CMakeFiles/multiplication-workshop.dir/src/Multiplicator.cpp.obj
+multiplication-workshop.exe: CMakeFiles/multiplication-workshop.dir/src/Number.cpp.obj
+multiplication-workshop.exe: CMakeFiles/multiplication-workshop.dir/src/Experimentator.cpp.obj
 multiplication-workshop.exe: CMakeFiles/multiplication-workshop.dir/build.make
 multiplication-workshop.exe: CMakeFiles/multiplication-workshop.dir/linklibs.rsp
 multiplication-workshop.exe: CMakeFiles/multiplication-workshop.dir/objects1.rsp

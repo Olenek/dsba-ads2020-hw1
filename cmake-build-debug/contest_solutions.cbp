@@ -126,27 +126,27 @@
 			<Option target="multiplication-workshop"/>
 			<Option target="multiplication-workshop_2"/>
 		</Unit>
-		<Unit filename="C:/Users/vultu/CLionProjects/multiplication-workshop/src2/Experimentator.cpp">
+		<Unit filename="C:/Users/vultu/CLionProjects/multiplication-workshop/src/Experimentator.cpp">
 			<Option target="multiplication-workshop"/>
 			<Option target="multiplication-workshop_2"/>
 		</Unit>
-		<Unit filename="C:/Users/vultu/CLionProjects/multiplication-workshop/src2/Experimentator.h">
+		<Unit filename="C:/Users/vultu/CLionProjects/multiplication-workshop/src/Experimentator.h">
 			<Option target="multiplication-workshop"/>
 			<Option target="multiplication-workshop_2"/>
 		</Unit>
-		<Unit filename="C:/Users/vultu/CLionProjects/multiplication-workshop/src2/MultiplicatorV.cpp">
+		<Unit filename="C:/Users/vultu/CLionProjects/multiplication-workshop/src/Multiplicator.cpp">
 			<Option target="multiplication-workshop"/>
 			<Option target="multiplication-workshop_2"/>
 		</Unit>
-		<Unit filename="C:/Users/vultu/CLionProjects/multiplication-workshop/src2/MultiplicatorV.h">
+		<Unit filename="C:/Users/vultu/CLionProjects/multiplication-workshop/src/Multiplicator.h">
 			<Option target="multiplication-workshop"/>
 			<Option target="multiplication-workshop_2"/>
 		</Unit>
-		<Unit filename="C:/Users/vultu/CLionProjects/multiplication-workshop/src2/Number.cpp">
+		<Unit filename="C:/Users/vultu/CLionProjects/multiplication-workshop/src/Number.cpp">
 			<Option target="multiplication-workshop"/>
 			<Option target="multiplication-workshop_2"/>
 		</Unit>
-		<Unit filename="C:/Users/vultu/CLionProjects/multiplication-workshop/src2/Number.h">
+		<Unit filename="C:/Users/vultu/CLionProjects/multiplication-workshop/src/Number.h">
 			<Option target="multiplication-workshop"/>
 			<Option target="multiplication-workshop_2"/>
 		</Unit>

@@ -3,18 +3,18 @@
 
 CMakeFiles/multiplication-workshop_2.dir/main.cpp.obj
  C:/Users/vultu/CLionProjects/multiplication-workshop/main.cpp
- C:/Users/vultu/CLionProjects/multiplication-workshop/src2/Experimentator.h
- C:/Users/vultu/CLionProjects/multiplication-workshop/src2/MultiplicatorV.h
- C:/Users/vultu/CLionProjects/multiplication-workshop/src2/Number.h
-CMakeFiles/multiplication-workshop_2.dir/src2/Experimentator.cpp.obj
- C:/Users/vultu/CLionProjects/multiplication-workshop/src2/Experimentator.cpp
- C:/Users/vultu/CLionProjects/multiplication-workshop/src2/Experimentator.h
- C:/Users/vultu/CLionProjects/multiplication-workshop/src2/MultiplicatorV.h
- C:/Users/vultu/CLionProjects/multiplication-workshop/src2/Number.h
-CMakeFiles/multiplication-workshop_2.dir/src2/MultiplicatorV.cpp.obj
- C:/Users/vultu/CLionProjects/multiplication-workshop/src2/MultiplicatorV.cpp
- C:/Users/vultu/CLionProjects/multiplication-workshop/src2/MultiplicatorV.h
- C:/Users/vultu/CLionProjects/multiplication-workshop/src2/Number.h
-CMakeFiles/multiplication-workshop_2.dir/src2/Number.cpp.obj
- C:/Users/vultu/CLionProjects/multiplication-workshop/src2/Number.cpp
- C:/Users/vultu/CLionProjects/multiplication-workshop/src2/Number.h
+ C:/Users/vultu/CLionProjects/multiplication-workshop/src/Experimentator.h
+ C:/Users/vultu/CLionProjects/multiplication-workshop/src/Multiplicator.h
+ C:/Users/vultu/CLionProjects/multiplication-workshop/src/Number.h
+CMakeFiles/multiplication-workshop_2.dir/src/Experimentator.cpp.obj
+ C:/Users/vultu/CLionProjects/multiplication-workshop/src/Experimentator.cpp
+ C:/Users/vultu/CLionProjects/multiplication-workshop/src/Experimentator.h
+ C:/Users/vultu/CLionProjects/multiplication-workshop/src/Multiplicator.h
+ C:/Users/vultu/CLionProjects/multiplication-workshop/src/Number.h
+CMakeFiles/multiplication-workshop_2.dir/src/Multiplicator.cpp.obj
+ C:/Users/vultu/CLionProjects/multiplication-workshop/src/Multiplicator.cpp
+ C:/Users/vultu/CLionProjects/multiplication-workshop/src/Multiplicator.h
+ C:/Users/vultu/CLionProjects/multiplication-workshop/src/Number.h
+CMakeFiles/multiplication-workshop_2.dir/src/Number.cpp.obj
+ C:/Users/vultu/CLionProjects/multiplication-workshop/src/Number.cpp
+ C:/Users/vultu/CLionProjects/multiplication-workshop/src/Number.h
