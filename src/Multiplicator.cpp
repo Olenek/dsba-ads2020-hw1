@@ -28,15 +28,15 @@ Number SchoolMultiplicator::multiply(const Number &n1, const Number &n2) const
 
 Number CaesarMultiplicator::multiply(const Number &n1, const Number &n2) const
 {
-    const size_t min_value = 16;
-
-    if (n1.size() <= min_value || n2.size() <= min_value) // modify to optimize
+    const size_t min_value = 1; // modify to optimize
+    if (n1.size() <= min_value || n2.size() <= min_value)
     {
         std::unique_ptr<Multiplicator> fallback = std::make_unique<SchoolMultiplicator>();
         return fallback->multiply(n1, n2);
     }
     size_t m = std::min(n1.size(), n2.size()) / 2;
 
+    //split numbers into two, one of which is of length m
     std::pair<Number, Number> a = n1.split(m);
     std::pair<Number, Number> b = n2.split(m);
     Number result;
@@ -59,9 +59,8 @@ Number CaesarMultiplicator::multiply(const Number &n1, const Number &n2) const
 
 Number KaratsubaMultiplicator::multiply(const Number &n1, const Number &n2) const
 {
-    // O(n log2 (3)) = constant * n ^ log2 (3)
-    const size_t min_value = 16;
-    if (n1.size() <= min_value || n2.size() <= min_value) // modify to optimize
+    const size_t min_value = 1;// modify to optimize
+    if (n1.size() <= min_value || n2.size() <= min_value)
     {
         std::unique_ptr<Multiplicator> fallback = std::make_unique<SchoolMultiplicator>();
         return fallback->multiply(n1, n2);
@@ -69,6 +68,7 @@ Number KaratsubaMultiplicator::multiply(const Number &n1, const Number &n2) cons
 
     size_t m = std::min(n1.size(), n2.size()) / 2;
 
+    //split numbers into two, one of which is of length m
     std::pair<Number, Number> a = n1.split(m);
     std::pair<Number, Number> b = n2.split(m);
 
