@@ -287,7 +287,7 @@ void Number::generate_random(size_t k, int time_seed)
 
 \subsection{In brief}
 Finally, it was decided to perform calculations of the running time of all three algorithms on problem sizes varying from 1 digit to 10001 digits with total of 73 data points. And then perform calculations of the running times of \textbf{Karatsuba} algorithm and \textbf{School-grade} algorithm on problem sizes varying from 1 digit to 100001 digits with total of 47 data points, in order to empyrically find when \textbf{Karatsuba} algorithm `beats` \textbf{School-grade} algorithm in terms of the running time.
-
+\clearpage
 \section{Processing of the results}
 
 The graphs were made with use of Python and its module Pandas. All results of the experiment can be found in GitHub repository in directories `/result` and `/graphs`.
@@ -307,9 +307,11 @@ From this graph it is impossible to tell whether \textbf{Karatsuba} multiplicati
 \centering
 \includegraphics[width=1\textwidth]{intersection_square}
 \end{figure}
+\
 This graph was made from file `intersection.csv` that was made with a different step-mechanism to make more frequent measurements. Details can be found in the repository.
   Here it can be seen that starting from around 90000 digits in a number, \textbf{Karatsuba} performs better than \textbf{School-grade}, however it does not mean that out hypotheses regarding time complexities are correct. We need another way to prove them.
 \[f(n) \in \Theta(g(n)) \iff \exists k_1, k_2 \in \mathbb{R}_+:  \exists n_0: \forall n > n_0 \ \ k_1 g(n) \leq f(n) \leq k_2 g(n) \]  
+The respective $k_1, k_2$ are represented in the graphs.
   \begin{figure}[h]
 \caption{School-grade $\in \Theta(n^2)$}
 
